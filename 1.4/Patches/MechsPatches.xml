@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- 机械卫螽-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Mech_Centurion"]/comps/li[@Class="CompProperties_ProjectileInterceptor"]/hitPoints</xpath>
+        <value>
+            <hitPoints>800</hitPoints>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Centurion"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <EMPResistance>0.80</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 魔王-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Mech_Diabolus"]/statBases/EMPResistance</xpath>
+        <value>
+            <EMPResistance>1.00</EMPResistance>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Diabolus"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- 女皇-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Mech_Warqueen"]/statBases/EMPResistance</xpath>
+        <value>
+            <EMPResistance>1.00</EMPResistance>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Warqueen"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- 毒蜂-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Mech_Apocriton"]/statBases/EMPResistance</xpath>
+        <value>
+            <EMPResistance>1.00</EMPResistance>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Mech_Apocriton"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Mech_Apocriton"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- 三蜈蚣-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="MechCentipede"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="MechCentipede"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="MechCentipede"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.80</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 飞螳-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Scyther"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.50</EMPResistance>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- 炽蚕-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Scorcher"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.50</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 蝎蝽-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Pikeman"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.50</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 盾螳-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Legionary"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.50</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 耀螳-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Tesseron"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.50</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 静螳-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Lancer"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.50</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 白蚁-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Termite"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.50</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 掘进机-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_Tunneler"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.80</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 战争死卫-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Mech_WarUrchin"]/statBases</xpath>
+        <value>
+            <EMPResistance>0.30</EMPResistance>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+        </value>
+    </Operation>
+</Patch>

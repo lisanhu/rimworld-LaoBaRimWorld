@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- 反曲弓-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.83</AccuracyTouch>
+        </value>
+    </Operation>
+
+    <!-- 巨弓-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bow_Great"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.90</AccuracyTouch>
+        </value>
+    </Operation>
+
+    <!-- 栓动步枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_BoltActionRifle"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>1.00</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_BoltActionRifle"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.95</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bullet_BoltActionRifle"]/projectile</xpath>
+        <value>
+            <armorPenetrationBase>0.17</armorPenetrationBase>
+        </value>
+    </Operation>
+
+    <!-- 泵动霰弹枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_PumpShotgun"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.92</AccuracyTouch>
+        </value>
+    </Operation>
+    
+    <!-- 轻机枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_LMG"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.53</AccuracyTouch>
+        </value>
+    </Operation>
+
+    <!-- 重型冲锋枪-->
+
+    <!-- 链式霰弹枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChainShotgun"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.69</AccuracyTouch>
+        </value>
+    </Operation>
+
+    <!-- 狙击步枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_SniperRifle"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>1.00</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_SniperRifle"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.98</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_SniperRifle"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.93</AccuracyMedium>
+        </value>
+    </Operation>
+
+    <!-- 突击步枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_AssaultRifle"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.75</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bullet_AssaultRifle"]/projectile</xpath>
+        <value>
+            <stoppingPower>1</stoppingPower>
+            <armorPenetrationBase>0.19</armorPenetrationBase>
+        </value>
+    </Operation>
+
+    <!-- 速射机枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Minigun"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.35</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Minigun"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.30</AccuracyShort>
+        </value>
+    </Operation>
+
+    <!-- 电荷标枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>1.00</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.95</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.90</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.85</AccuracyLong>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/verbs/li/range</xpath>
+        <value>
+            <range>37</range>
+        </value>
+    </Operation>
+
+    <!-- 电荷步枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.80</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.75</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.70</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.65</AccuracyLong>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeRifle"]/verbs/li/range</xpath>
+        <value>
+            <range>35</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bullet_ChargeRifle"]/projectile</xpath>
+        <value>
+            <stoppingPower>1.0</stoppingPower>
+        </value>
+    </Operation>
+    
+    
+</Patch>

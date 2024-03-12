@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- 集群火箭发射器 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Proj_Rocket"]/projectile</xpath>
+        <value>
+            <stoppingPower>1</stoppingPower>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_RocketswarmLauncher"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.80</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_RocketswarmLauncher"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.72</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_RocketswarmLauncher"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.66</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_RocketswarmLauncher"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.50</AccuracyLong>
+        </value>
+    </Operation>
+
+    <!-- 小型机枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_MiniTurret"]/verbs/li/burstShotCount</xpath>
+        <value>
+            <burstShotCount>3</burstShotCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_MiniTurret"]/statBases/RangedWeapon_Cooldown</xpath>
+        <value>
+            <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+        </value>
+    </Operation>
+
+    <!-- 加农炮塔-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Turret_Autocannon"]/statBases</xpath>
+        <value>
+            <MaxHitPoints>800</MaxHitPoints>
+        </value>
+    </Operation>
+
+    <!-- 加农炮-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_AutocannonTurret"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.78</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_AutocannonTurret"]/verbs/li/burstShotCount</xpath>
+        <value>
+            <burstShotCount>5</burstShotCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bullet_AutocannonTurret"]/projectile</xpath>
+        <value>
+            <stoppingPower>3</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- 铀弹加农炮塔-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Turret_Sniper"]/statBases</xpath>
+        <value>
+            <MaxHitPoints>800</MaxHitPoints>
+        </value>
+    </Operation>
+
+    <!-- 铀弹加农炮-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bullet_TurretSniper"]/projectile</xpath>
+        <value>
+            <stoppingPower>5</stoppingPower>
+            <armorPenetrationBase>1.20</armorPenetrationBase>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bullet_TurretSniper"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>80</damageAmountBase>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_TurretSniper"]/statBases/RangedWeapon_Cooldown</xpath>
+        <value>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_TurretSniper"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>1.00</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_TurretSniper"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>1.00</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_TurretSniper"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>1.00</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_TurretSniper"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>1.00</AccuracyLong>
+        </value>
+    </Operation>
+
+    <!-- 小型冲击枪-->
+
+    <!-- 地狱火加农炮-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bullet_InfernoCannon"]/projectile</xpath>
+        <value>
+            <stoppingPower>3</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- 轻型电荷冲击炮-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterHeavyTurret"]/verbs/li/burstShotCount</xpath>
+        <value>
+            <burstShotCount>24</burstShotCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterHeavyTurret"]/statBases</xpath>
+        <value>
+            <AccuracyTouch>0.40</AccuracyTouch>
+            <AccuracyShort>0.32</AccuracyShort>
+            <AccuracyMedium>0.26</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterHeavyTurret"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.18</AccuracyLong>
+        </value>
+    </Operation>
+
+    <!-- 自动电荷冲击炮塔-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Turret_AutoChargeBlaster"]/statBases/MaxHitPoints</xpath>
+        <value>
+            <MaxHitPoints>500</MaxHitPoints>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Turret_AutoChargeBlaster"]/statBases</xpath>
+        <value>
+            <EMPResistance>1</EMPResistance>
+        </value>
+    </Operation>
+
+    <!-- 自动地狱火加农炮塔-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Turret_AutoInferno"]/statBases/MaxHitPoints</xpath>
+        <value>
+            <MaxHitPoints>500</MaxHitPoints>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Turret_AutoInferno"]/statBases</xpath>
+        <value>
+            <EMPResistance>1</EMPResistance>
+        </value>
+    </Operation>
+
+</Patch>

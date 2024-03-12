@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- 帝王业火炮-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_HellsphereCannon"]/statBases/RangedWeapon_Cooldown</xpath>
+        <value>
+            <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_HellsphereCannon"]/verbs/li/range</xpath>
+        <value>
+            <range>26</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_HellsphereCannon"]/verbs/li/warmupTime</xpath>
+        <value>
+            <warmupTime>5</warmupTime>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bullet_HellsphereCannonGun"]/projectile</xpath>
+        <value>
+            <stoppingPower>5.0</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- 脊刺枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Spiner"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.55</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Spiner"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.50</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Spiner"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.45</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Spiner"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.40</AccuracyLong>
+        </value>
+    </Operation>
+
+    <!-- 广域射线炮-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_BeamGraser"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.75</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_BeamGraser"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.70</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_BeamGraser"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.65</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_BeamGraser"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.55</AccuracyLong>
+        </value>
+    </Operation>
+
+    <!-- 破城炮-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ThumpCannon"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.94</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ThumpCannon"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.87</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ThumpCannon"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.77</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ThumpCannon"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.64</AccuracyLong>
+        </value>
+    </Operation>
+
+    <!-- 迷你火焰冲击枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_MiniFlameblaster"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.53</AccuracyTouch>
+        </value>
+    </Operation>
+
+    <!-- 穿刺针-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Needle"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>1.0</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Needle"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.95</AccuracyShort>
+        </value>
+    </Operation>
+
+    <!-- 电荷冲击炮-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="Gun_ChargeBlasterHeavyBase"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>0.60</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="Gun_ChargeBlasterHeavyBase"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.52</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="Gun_ChargeBlasterHeavyBase"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.48</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="Gun_ChargeBlasterHeavyBase"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.36</AccuracyLong>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bullet_ChargeBlasterHeavy"]/projectile</xpath>
+        <value>
+            <armorPenetrationBase>0.50</armorPenetrationBase>
+        </value>
+    </Operation>
+
+    <!-- 电荷冲击炮塔-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterTurret"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>1.00</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterTurret"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>0.95</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterTurret"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>0.90</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterTurret"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>0.85</AccuracyLong>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterTurret"]/verbs/li</xpath>
+        <value>
+            <burstShotCount>3</burstShotCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterTurret"]/verbs/li/range</xpath>
+        <value>
+            <range>45</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeBlasterTurret"]/verbs/li/ticksBetweenBurstShots</xpath>
+        <value>
+            <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        </value>
+    </Operation>
+
+    <!-- 毒针枪-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ToxicNeedle"]/statBases/AccuracyTouch</xpath>
+        <value>
+            <AccuracyTouch>1.00</AccuracyTouch>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ToxicNeedle"]/statBases/AccuracyShort</xpath>
+        <value>
+            <AccuracyShort>1.00</AccuracyShort>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ToxicNeedle"]/statBases/AccuracyMedium</xpath>
+        <value>
+            <AccuracyMedium>1.00</AccuracyMedium>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ToxicNeedle"]/statBases/AccuracyLong</xpath>
+        <value>
+            <AccuracyLong>1.00</AccuracyLong>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bullet_ToxicNeedleGun"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>30</damageAmountBase>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bullet_ToxicNeedleGun"]/projectile/stoppingPower</xpath>
+        <value>
+            <stoppingPower>3.0</stoppingPower>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bullet_ToxicNeedleGun"]/projectile/armorPenetrationBase</xpath>
+        <value>
+            <armorPenetrationBase>0.50</armorPenetrationBase>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_ToxicNeedle"]/verbs/li</xpath>
+        <value>
+            <burstShotCount>3</burstShotCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_ToxicNeedle"]/verbs/li</xpath>
+        <value>
+            <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        </value>
+    </Operation>
+
+</Patch>
